@@ -7,6 +7,8 @@
 }
 
 body {
+  max-width: 100%;
+  overflow-x: hidden !important;
   font-family: "Public Sans", sans-serif;
 }
 
@@ -46,18 +48,17 @@ body {
   width: 100%;
   background-color: #fafafa;
   margin: 0;
-  overflow: hidden;
   -webkit-box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.017), 0 0px 5.3px rgba(0, 0, 0, 0.024), 0 0px 10px rgba(0, 0, 0, 0.028), 0 0px 17.9px rgba(0, 0, 0, 0.034), 0 0px 33.4px rgba(0, 0, 0, 0.042), 0 0px 80px rgba(0, 0, 0, 0.07);
           box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.017), 0 0px 5.3px rgba(0, 0, 0, 0.024), 0 0px 10px rgba(0, 0, 0, 0.028), 0 0px 17.9px rgba(0, 0, 0, 0.034), 0 0px 33.4px rgba(0, 0, 0, 0.042), 0 0px 80px rgba(0, 0, 0, 0.07);
 }
 
 .hero-container .col {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .hero-container #bg {
-  min-height: 110vh;
-  margin-top: -20vh;
+  min-height: 90vh;
+  margin-top: -25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,11 +74,12 @@ body {
 }
 
 .hero-container #bg img {
-  position: absolute;
+  position: relative;
   max-width: 100%;
   z-index: 1;
-  -webkit-transform: translateY(20vh);
-          transform: translateY(20vh);
+  -webkit-transform: translateY(125px);
+          transform: translateY(125px);
+  margin-right: -15vh;
 }
 
 .hero-container #hero-text {
