@@ -67,8 +67,9 @@ $brightcyan: hsl(192, 70%, 51%);
    0 0px 80px rgba(0, 0, 0, 0.07)
  ;
  .col{
+     
+     min-height: 100vh;
 
-    min-height: 100vh;
  }
  #bg{
      min-height: 90vh;
@@ -167,14 +168,21 @@ h1{
                 color: $GrayishBlue;
             }
             .featured-row{
+
                 width:100%;
                 margin: 75px auto;
+
+           
+                justify-content:space-between;
+                  align-items:center;
+               
+
                 .col{
-                    
-                 padding-right: 10px;
                  margin-bottom: 10px ;
+                padding: 20px;
                  .f-card{
-          
+                   
+
                      width:100%;
                      min-height: 250px;
                      display: flex;
@@ -185,8 +193,9 @@ h1{
                          margin-bottom: 30px;
                      }
                      p{
-                         width:90% !important;
+                         width:100% !important;
                          font-size: 16px;
+                         text-align: justify;
                      }
                      h1{
                          margin:0 ;
@@ -199,10 +208,164 @@ h1{
                  
                 }
             }
+        
         }
 
+        .blog-container{
+            width:100%;
+            min-height: 100vh;
+            background-color:  $VeryLightGray;
+            padding-top: 10vh;
+
+            h1{
+                font-size: 36px;
+            font-family: $font;
+            margin: 5vh auto;
+            }
+            .blog-row{
+                width:100%;
+                margin: 0 !important;
+                padding:0 !important;
+                .col{
+                    
+                    
+                    margin:10px auto !important;
+                    padding:0 !important;
+                }
+                .b-card{
+                    min-height: 50vh;
+                    width:92%;
+                    border-radius: 6px 6px 0 0;
+                 background-color: white !important;
+                    margin: 0;
+                    img{
+                        border-radius: 6px 6px 0 0;
+
+                        width: 100%;
+                        height: 200px;
+           object-fit: cover !important;
+                    }
+                    .txt-card{
+                        width:95%;
+                        margin: 0 auto;
+                        padding: 20px 10px;
+
+                    }
+                        font-family: $font !important;
+h2{
+    margin: 10px auto;
+    padding: 0 !important;
+    font-size: 20px;
+}
+p{
+    text-align:left;
+    color:$GrayishBlue;
+}
+                    span{
+                        font-size: 14px;
+                        color: $GrayishBlue;
+                        font-weight: 400;
+                    }
+                }
+
+            }
+        }
+
+        footer{
+            width:100%;
+            background-color: $darkblue;
+              height:auto;
+            .row{
+                min-height: 25vh;
+
+                margin: 0 !important;
+            }
+            .col{
+                min-height: 25vh !important;
+                // border:1px solid red !important;
+                display: flex !important;
+                justify-content: center !important;
+                align-items: center;
+          flex-direction: column !important;
+          img{
+              margin: 5px;
+            display: inline-block !important;
+          }
+          span{
+              color:hsl(233, 8%, 62%);
+              margin: 20px auto;
+          }
+          #btn{
+              width:max-content !important;
+          }
+                a{
+                    color: white;
+                    width:100%;
+                    display: block !important;
+                    margin:5px auto !important;
+                }
+            }
+        }
+
+        #brand{
+            margin: 20px auto;
+            background-image: url('./images/logo.svg');
+            min-height: 20px;
+            img{
+                height:20px !important;
+            }
+            background-size: cover;
+            &::before{
+                content:'easybank';
+                color: white;
+                font-family: $font;
+                font-weight: 700;
+                margin-left: 35px;
+                font-size: 20px;
+                position: absolute;
+                width:max-content;
+            }
+        }
      @media screen and (max-width:475px){
-         .hero-container{
+        footer .col a{
+            text-align: center;
+
+        }
+        footer .col {
+            margin: 10px auto !important;
+            min-height: auto !important;
+        }
+        .hero-container #hero-text h1{
+            font-size:30px !important;
+        }
+        .blog-container .blog-row .b-card{
+            margin: 10px auto;
+        }
+        .feature-container p{
+            width:80%;
+            margin: 0 auto !important;
+            text-align: justify;
+        }
+        .feature-container h1{
+            text-align: center;
+        }
+        .container{
+            width:100%;
+            padding: 10px;
+        }
+        .feature-container .featured-row .col{
+            padding: 0 !important;
+        }
+        .feature-container .featured-row .col .f-card{
+            justify-content:center;
+            align-items:center;
+            p{
+                width:100%;
+                text-align:center;
+                margin-bottom: 20px;
+            }
+        }
+        .hero-container{
              .col{
                  min-height: auto !important; 
              }
@@ -231,4 +394,11 @@ object-fit: contain;
                  }
              }
          }
+     }
+
+     h1{
+         color: $darkblue !important;
+     }
+     body{
+         overflow-x: hidden !important;
      }
