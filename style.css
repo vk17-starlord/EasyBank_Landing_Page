@@ -333,7 +333,6 @@ footer .col a {
 
 #brand {
   margin: 20px auto;
-  background-image: url("./images/logo.svg");
   min-height: 20px;
   background-size: cover;
 }
@@ -396,6 +395,14 @@ footer .col a {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .blog-container {
+    padding-top: 10vh !important;
+  }
+  .blog-container h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
   }
   .hero-container .col {
     min-height: auto !important;

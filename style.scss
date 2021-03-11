@@ -309,7 +309,7 @@ p{
 
         #brand{
             margin: 20px auto;
-            background-image: url('./images/logo.svg');
+          
             min-height: 20px;
             img{
                 height:20px !important;
@@ -364,6 +364,14 @@ p{
                 text-align:center;
                 margin-bottom: 20px;
             }
+        }
+        .blog-container{
+            padding-top: 10vh !important;
+        }
+        .blog-container h1{
+            font-size: 24px;
+       text-align: center;
+            margin-top: 0;
         }
         .hero-container{
              .col{
